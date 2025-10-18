@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+  <title>Bootstrap Project</title>
+</head>
+<body>
+  <!-- Top container: Navbar -->
+  <!-- START::Nav section -->
+  <div class="container-fluid shadow bg-main-color py-1 py-sm-2">
+    <nav class="navbar navbar-expand-lg bg-transparent w-xl-80 m-auto">
+      <div class="container-fluid px-1 px-sm-3">
+        <a class="py-2" href="#">
+          <img src="./assets/images/logo.png" alt="logo" class="w-logo-mobile w-sm-mobile">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="text-white fs-25">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </span>
+        </button>
+        <div class="offcanvas offcanvas-end fullscreen-menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- Expand menu mobile and mini tablet -->
+          <div class="d-lg-none">
+            <div class="offcanvas-header justify-content-end">
+              <button type="button" class="bg-main-color border-0 text-white fs-1 me-1 me-sm-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="container-fluid px-4 max-w-450">
+              <div class="offcanvas-body">
+                <!-- Top section -->
+                <div class="d-flex flex-column row-gap-3 mb-5">
+                  <div class="position-relative">
+                    <input class="form-control border-start-0 fs-main-14 fw-bold card-color label-color-gray rounded-3 border-0 p-2" type="search" placeholder="Cari Artikel atau Kategori" aria-label="Search"/>
+                    <a href="#">
+                      <i class="fa-solid fa-magnifying-glass label-color position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                    </a>
+                  </div>
+                  <a class="text-decoration-none nav-text-color fs-32 fw-bold" href="#"><span>Beranda</span></a>
+                  <a class="text-decoration-none nav-text-color fs-32 fw-bold" href="#"><span>Tutorial</span></a>
+                  <a class="text-decoration-none nav-text-color fs-32 fw-bold" href="#"><span>Pemrograman</span></a>
+                  <a class="text-decoration-none nav-text-color fs-32 fw-bold" href="#"><span>Teknologi</span></a>
+                </div>
+                <!-- Bottom section -->
+                <div class="d-flex flex-column row-gap-3 pt-4">
+                  <span class="fs-32 fw-bold">Paling Populer</span>
+
+                  <a class="text-decoration-none" href="#">
+                    <div class="card border-0 rounded-3">
+                      <div class="row g-0 pe-3">
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                          <div class="w-75 h-75 card-color rounded-3"></div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card-body ms-n20">
+                            <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                            <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="text-decoration-none" href="#">
+                    <div class="card border-0 rounded-3">
+                      <div class="row g-0 pe-3">
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                          <div class="w-75 h-75 card-color rounded-3"></div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card-body ms-n20">
+                            <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                            <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="text-decoration-none" href="#">
+                    <div class="card border-0 rounded-3">
+                      <div class="row g-0 pe-3">
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                          <div class="w-75 h-75 card-color rounded-3"></div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card-body ms-n20">
+                            <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                            <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Desktop nav menu -->
+          <ul class="navbar-nav gap-2 d-none d-lg-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active nav-text-color fw-bolder" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color fw-bolder" href="#">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color fw-bolder" href="#">Pemrograman</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color fw-bolder" href="#">Teknologi</a>
+            </li>
+            <li class="align-self-center ms-1">
+              <a href="">
+                <span class="nav-text-color fs-6 fw-bolder pt-4">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- END::Nav section -->
+
+  <!-- Middle container: Articles, Sidebar -->
+  <div class="container-fluid mt-4 px-sm-4 w-xl-80">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <!-- Article navbar -->
+        <div class="col-12 bg-main-color p-1 p-sm-3 mb-4 rounded-3 border-0 shadow text-white">
+          
+          <a class="text-white fs-main-14 text-decoration-none" href="">Home</a>
+          >
+          <a class="text-white fs-main-14 text-decoration-none" href="">html</a>
+          >
+          <a class="text-white fs-main-14 text-decoration-none" href="">Apa Itu HTML ?</a>
+        </div>
+        <!-- ARTICLE section -->
+        <article class="col-12">
+          <h1 class="m-0 fw-bold">Mengenal Apa Itu HTML ?</h1>
+          <p class="fs-main-14"><span class="fw-bold">By </span>Ridho Satriawan<span class="ms-4">22 Agustus 2022</span></p>
+
+          <h2>Apa itu HTML ?</h2>
+          <p>
+           Buat kamu yang pernah membuat sebuah website pastinya sudah tidak asing lagi dengan yang namanya HTML. Sebenarnya apa sih HTML itu ? Kenapa menggunakan HTML untuk membuat website ?
+          </p>
+
+          <h2>Pengertian</h2>
+          <p>
+            HTML merupakan singkatan dari Hyper Text Markup Language, merupakan bahasa markup standard yang digunakan untuk menampilkan dokumen ke Web Browser seperti Google Chrome dan Edge. HTML biasanya digunakan bersama teknologi lainya, seperti Cascading Style Sheets (CSS) dan bahasa scripting seperti Javascript. 
+          </p>
+          <p>
+            Struktur di dalam HTML terdiri dari serangkaian elemen, elemen tersebut berfungsi untuk memberi informasi kepada Web Browser tentang cara menampilkan konten. Elemen dalam HTML memiliki banyak jenis dan memiliki fungsinya masing-masing, seperti elemen paragraf , input, judul dan lainya. Pada umumnya elemen terdiri dari tag pembuka, konten dan tag penutup, ada juga sebagian elemen yang tidak memiliki tag penutup dan konten.
+          </p>
+          <p>
+           Sedangkan tag itu sendiri ditulis dengan cara diapit tanda kurung sudut dan untuk tag penutup diberi garis miring sebelum nama tagnya, sebagai contoh <p> </p>. Sedangkan untuk elemen yang hanya menggunakan satu tag, cara penulisanya diberi garis miring setelah nama tag contohnya <img />.
+          </p>
+
+          <h2>Sejarah Singkat</h2>
+          <p>
+            HTML pertama kali dicetus pada tahun 1980 oleh Tim Berners-Lee, pada saat itu dia sedang bekerja di salah satu perusahaan yang bernama CERN (European Organization for Nuclear Research), dia mengusulkan untuk membuat sebuah sistem yang bernama ENQUIRE yang berfungsi untuk mengelola dokumen perusahaan.
+          </p>
+          <p>
+            Kemudian pada tahun 1990 Berners-Lee dan timnya yang berasal dari perusahaan yang sama mulai mencari pendanaan untuk projeknya akan tetapi tidak berjalan dengan lancar. HTML mulai dipublikasikan pada tahun 1991 dan memiliki 18 tag, hingga sekarang HTML mengalami perkembangan.
+          </p>
+          <img src="./assets/images/code-snippet.png" alt="code-snippet">
+
+          <h2>Penutup</h2>
+          <p>
+            HTML pertama kali dicetus pada tahun 1980 oleh Tim Berners-Lee, pada saat itu dia sedang bekerja di salah satu perusahaan yang bernama CERN (European Organization for Nuclear Research), dia mengusulkan untuk membuat sebuah sistem yang bernama ENQUIRE yang berfungsi untuk mengelola dokumen perusahaan.
+          </p>
+          <p>
+            Kemudian pada tahun 1990 Berners-Lee dan timnya yang berasal dari perusahaan yang sama mulai mencari pendanaan untuk projeknya akan tetapi tidak berjalan dengan lancar. HTML mulai dipublikasikan pada tahun 1991 dan memiliki 18 tag, hingga sekarang HTML mengalami perkembangan.
+          </p>
+        </article>
+
+      </div>
+      <!-- Sidebar section -->
+      <div class="d-none d-lg-flex flex-column col-lg-4">
+        <!-- Top section -->
+        <div class="">
+          <div class="p-3 text-center bg-main-color text-white fw-bold fs-5 rounded-3 border-0 shadow">Paling Populer</div>
+          <a class="d-block text-decoration-none mt-4" href="#">
+            <div class="card border-0 rounded-3 shadow">
+              <div class="row g-0 p-xl-2">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <div class="w-75 h-75 h-xl-100 card-color rounded-3"></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ms-n20">
+                    <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                    <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="d-block text-decoration-none mt-4" href="#">
+            <div class="card border-0 rounded-3 shadow">
+              <div class="row g-0 p-xl-2">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <div class="w-75 h-75 h-xl-100 card-color rounded-3"></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ms-n20">
+                    <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                    <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="d-block text-decoration-none mt-4" href="#">
+            <div class="card border-0 rounded-3 shadow">
+              <div class="row g-0 p-xl-2">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <div class="w-75 h-75 h-xl-100 card-color rounded-3"></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ms-n20">
+                    <p class="m-0 fs-lg-14 fw-bold">Ini Adalah Judul Artikel</p>
+                    <p class="m-0 fs-12 label-color-gray">22 Agustus 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="mt-4">
+          <div class="p-3 fs-5 fw-bold bg-main-color text-white text-center rounded-3 border-0 shadow mb-4">Kategori</div>
+          <a class="text-decoration-none text-black" href="#">
+            <div class="d-flex justify-content-between">
+              <span class="fs-14 fw-semibold">>Label 1</span>
+              <span class="fs-14 fw-semibold">(1)</span>
+            </div>
+          </a>
+          <a class="text-decoration-none text-black" href="#">
+            <div class="d-flex justify-content-between">
+              <span class="fs-14 fw-semibold">>Label 2</span>
+              <span class="fs-14 fw-semibold">(2)</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom container: Footer -->
+  <div class="container-fluid p-0">
+    <div class="bg-main-color text-white text-center fs-main-14 fw-semibold p-3 border-0">Copyright@KangTutor</div>
+  </div>
+
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
