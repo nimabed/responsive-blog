@@ -75,6 +75,10 @@ body {
   width: 170px;
 }
 
+.w-390 {
+  width: 100%;
+}
+
 .max-w-450 {
   max-width: 450px;
 }
@@ -138,6 +142,9 @@ body {
 @media (min-width:992px) {
   .h-slider {
     height: 100%;
+  }
+  .fs-md-20 {
+    font-size: 20px;
   }
 
 }
