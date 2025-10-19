@@ -61,6 +61,7 @@ body {
   font-size: 14px;
 }
 
+/* Heights */
 .h-slider {
   height: 209px;
 }
@@ -83,10 +84,12 @@ body {
   max-width: 450px;
 }
 
+/* Margins */
 .ms-n20 {
   margin-left: -20px;
 }
 
+/* Shadows */
 .shadow {
   box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
